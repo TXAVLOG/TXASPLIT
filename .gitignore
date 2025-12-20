@@ -1,0 +1,50 @@
+# ████████ ██   ██  █████   █████  ██████  ██████  
+#    ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██ 
+#    ██      ███   ███████ ███████ ██████  ██████  
+#    ██     ██ ██  ██   ██ ██   ██ ██      ██      
+#    ██    ██   ██ ██   ██ ██   ██ ██      ██      
+#
+# TXA.gitinore - Build by TXA
+# Liên hệ: FB https://fb.com/vlog.txa.2311 | Gmail: txavlog7@gmail.com
+
+# --- Root level exclusions theo yêu cầu ---
+README_IMPLEMENTATION.md
+/tools/
+/.windsurf/
+/.cursor/
+/.gradle/
+/.kotlin/
+/gradle/
+/build/
+/TXABUILD/
+
+# --- Android/IDE artifacts ---
+/local.properties
+*.iml
+*.ipr
+*.iws
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Gradle cache ---
+.gradle/
+**/build/
+**/out/
+
+# --- Kotlin/Java ---
+*.class
+*.jar
+*.war
+*.ear
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.swp
+
+# --- Media/large assets not tracked ---
+*.psd
+*.ai
+*.zip
+*.tar.gz

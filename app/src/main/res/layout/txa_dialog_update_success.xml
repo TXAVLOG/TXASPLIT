@@ -1,0 +1,26 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - txa_dialog_update_success.xml
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txaUpdateSuccessMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:lineSpacingExtra="2dp"
+        android:text="" />
+
+</LinearLayout>

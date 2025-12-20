@@ -1,0 +1,20 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - Launcher Background Gradient (Dating App Style)
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="#FF6B9E"
+        android:centerColor="#C77DFF"
+        android:endColor="#9D4EDD" />
+</shape>

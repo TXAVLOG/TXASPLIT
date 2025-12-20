@@ -1,0 +1,37 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - Launcher Foreground (Split Bill Icon)
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Split bill icon: 2 người chia hóa đơn -->
+    <!-- Người 1 (trái) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,54 C27,42.95 35.95,34 47,34 C58.05,34 67,42.95 67,54 C67,65.05 58.05,74 47,74 C35.95,74 27,65.05 27,54 Z" />
+    <!-- Người 2 (phải) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M41,54 C41,42.95 49.95,34 61,34 C72.05,34 81,42.95 81,54 C81,65.05 72.05,74 61,74 C49.95,74 41,65.05 41,54 Z" />
+    <!-- Dấu chia (/) ở giữa -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,40 L54,68" />
+    <!-- Dấu $ nhỏ -->
+    <path
+        android:fillColor="#FF6B9E"
+        android:pathData="M50,48 L50,50 L52,50 L52,52 L50,52 L50,56 L52,56 L52,58 L50,58 L50,60 L48,60 L48,58 L46,58 L46,56 L48,56 L48,52 L46,52 L46,50 L48,50 L48,48 Z" />
+</vector>

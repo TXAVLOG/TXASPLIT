@@ -1,0 +1,15 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██      ██
+   ██    ██   ██ ██   ██ ██   ██ ██      ██
+
+TXASplit - FileProvider Paths
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, Email: txavlog7@gmail.com!
+-->
+<paths>
+    <external-files-path name="external_files" path="." />
+    <cache-path name="cache" path="." />
+</paths>

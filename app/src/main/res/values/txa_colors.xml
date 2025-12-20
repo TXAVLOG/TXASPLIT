@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - txa_colors.xml
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+
+<resources>
+    <!-- Primary Colors -->
+    <color name="txa_primary">#1976D2</color>
+    <color name="txa_primary_dark">#1565C0</color>
+    <color name="txa_primary_light">#BBDEFB</color>
+    
+    <!-- Text Colors -->
+    <color name="txa_primary_text">#212121</color>
+    <color name="txa_secondary_text">#757575</color>
+    <color name="txa_hint_text">#9E9E9E</color>
+    
+    <!-- VietQR Overlay Colors -->
+    <color name="txa_overlay_background">#80000000</color>
+    <color name="txa_overlay_text">#FFFFFF</color>
+    
+    <!-- Background Colors -->
+    <color name="txa_background">#FAFAFA</color>
+    <color name="txa_surface">#FFFFFF</color>
+    <color name="txa_card">#FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="txa_success">#4CAF50</color>
+    <color name="txa_warning">#FF9800</color>
+    <color name="txa_error">#F44336</color>
+    <color name="txa_info">#2196F3</color>
+    
+    <!-- Border Colors -->
+    <color name="txa_border">#E0E0E0</color>
+    <color name="txa_border_light">#F5F5F5</color>
+    
+    <!-- Group Role Colors -->
+    <color name="txa_role_host">#FFD700</color>
+    <color name="txa_role_co_host">#87CEEB</color>
+    <color name="txa_role_member">#E0E0E0</color>
+</resources>

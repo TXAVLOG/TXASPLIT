@@ -1,0 +1,17 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██      ██
+   ██    ██   ██ ██   ██ ██   ██ ██      ██
+
+TXASplit - Colors
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, Email: txavlog7@gmail.com!
+-->
+<resources>
+    <color name="txa_color_primary">#3F51B5</color>
+    <color name="txa_color_on_primary">#FFFFFF</color>
+    <color name="txa_color_background">#FFFFFF</color>
+    <color name="txa_color_on_background">#111111</color>
+</resources>

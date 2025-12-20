@@ -1,0 +1,370 @@
+/*
+████████ ██   ██  █████   █████  ██████  ██████  
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██ 
+   ██      ███   ███████ ███████ ██████  ██████  
+   ██     ██ ██  ██   ██ ██   ██ ██      ██      
+   ██    ██   ██ ██   ██ ██   ██ ██      ██      
+                                                 
+TXASplit - Active Strings Reference
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+
+Đây là danh sách các key đang thực sự được sử dụng trong app.
+API Base URL: https://soft.nrotxa.online/txasplit/api/
+*/
+
+# ═══════════════════════════════════════════════════════════════
+# KEYS ĐANG ĐƯỢC SỬ DỤNG TRONG APP (ACTIVE)
+# ═══════════════════════════════════════════════════════════════
+
+## APP CORE (MainActivity, MainViewModel)
+txasplit_app_name: "TXASplit"
+txasplit_tab_groups: "Groups"
+txasplit_tab_summary: "Summary"
+txasplit_tab_profile: "Profile"
+
+## DASHBOARD / GROUPS (Groups tab)
+txasplit_dashboard_net_balance: "Net Balance: %1$s"
+txasplit_groups_hint_open_sample: "Tap the sample group to open Group Detail"
+txasplit_groups_sample_group: "Sample Group"
+
+## SPLASH SCREEN (SplashActivity)
+txasplit_version_guard_error: "This app does not support %1$s. Please upgrade to Android 14 or later for security and performance."
+txasplit_version_guard_title: "Unsupported Version"
+txasplit_splash_checking: "Checking language..."
+txasplit_splash_downloading: "Downloading language..."
+txasplit_splash_ready: "Ready"
+txasplit_splash_error: "Error: %1$s"
+txasplit_splash_using_cache: "Using cached translations"
+
+## SETTINGS SCREEN (SettingsActivity, SettingsViewModel)
+txasplit_settings: "Settings"
+txasplit_profile: "Profile"
+txasplit_edit_profile: "Edit Profile"
+txasplit_language: "Language"
+txasplit_notifications: "Notifications"
+txasplit_ai_key_settings: "AI Configuration (Under Development)"
+txasplit_ai_key_saved: "AI key saved successfully (Feature not yet active)"
+txasplit_ai_key_required: "AI key required. Please add key in Settings. (Feature under development)"
+txasplit_privacy_policy: "Privacy Policy"
+txasplit_change_password: "Change Password"
+txasplit_backup_data: "Backup Data (Under Development)"
+txasplit_sync_data: "Sync Data (Under Development)"
+txasplit_help: "Help"
+txasplit_faq: "Frequently Asked Questions"
+txasplit_about: "About"
+txasplit_logout: "Logout"
+txasplit_confirm_logout: "Are you sure you want to logout?"
+txasplit_error_generic: "Something went wrong. Please try again."
+
+## SETTINGS - ACTIONS (Basic)
+txasplit_check_update: "Check Update"
+txasplit_update_view_logs: "View Update Logs"
+txasplit_export_data: "Export Data"
+txasplit_app_set_id_loading: "App Set ID: loading..."
+txasplit_app_set_id: "App Set ID: %s"
+
+## PERMISSIONS (Background Update)
+txasplit_grant: "Grant"
+txasplit_open_settings: "Open Settings"
+txasplit_error_open_settings: "Can't open Settings. Please open it manually."
+txasplit_perm_all_files_title: "Storage access required"
+txasplit_perm_all_files_message: "To save API logs into Downloads/TXASPLIT and enable background update checks, please allow 'All files access' for TXASplit."
+txasplit_perm_battery_title: "Disable battery optimization"
+txasplit_perm_battery_title_message: "To check updates in background every 3 minutes, please allow TXASplit to ignore battery optimization. Otherwise, the system may stop background updates."
+txasplit_perm_battery_title_message_failed: "We couldn't open the permission popup. Please open Settings → Battery and set TXASplit to 'Unrestricted/Don't optimize' to enable background updates."
+txasplit_perm_battery_toast_unavailable: "Can't open battery settings. Background updates won't work without disabling battery optimization."
+txasplit_perm_battery_toast_required: "Battery optimization is still enabled. Background update checks won't work until you set TXASplit to 'Don't optimize/Unrestricted'."
+
+## UPDATE FLOW (In-app Update)
+txasplit_update_title_no_update: "No update"
+txasplit_update_no_update: "You are on the latest version."
+txasplit_update_title_available: "Update available (%1$s)"
+txasplit_update_need_permission: "Please allow installing unknown apps to continue."
+txasplit_update_downloading: "Downloading update..."
+txasplit_update_download: "Download"
+txasplit_close: "Close"
+txasplit_update_new_version: "New version: %1$s (%2$s)"
+txasplit_update_release_date: "Updated on: %1$s"
+txasplit_update_release_date_unknown: "Updated on: (unknown)"
+txasplit_update_changelog_empty: "No changelog provided."
+txasplit_update_unknown_sources_title: "Permission required"
+txasplit_update_unknown_sources_message: "To install updates, please allow TXASplit to install unknown apps for this device. Tap Grant to open system settings."
+txasplit_update_retrying_in: "Retrying in %1$s s..."
+txasplit_update_download_failed_title: "Download failed"
+txasplit_update_download_failed_message: "Can't download update. %1$s"
+txasplit_update_success_title: "Update successful"
+txasplit_update_success_message: "Update successful! You're now on %1$s."
+txasplit_update_success_message_generic: "Update successful!"
+txasplit_update_logs_not_found: "No update logs found yet."
+txasplit_update_logs_read_error: "Can't read update log file. Please try again later."
+
+## DOWNLOAD VALIDATION ERRORS (NEW)
+txasplit_update_invalid_file: "Invalid File"
+txasplit_update_invalid_file_message: "Downloaded file is not a valid APK. Please try again."
+txasplit_update_file_too_small: "File Too Small"
+txasplit_update_file_too_small_message: "Downloaded file is too small to be a valid APK. This might be an HTML page instead of the actual APK."
+txasplit_update_invalid_content_type: "Invalid Content Type"
+txasplit_update_invalid_content_type_message: "Server returned an invalid file type. Expected APK file but got: %s"
+txasplit_update_resolving_url: "Resolving download URL..."
+
+## GROUP DETAIL (Tabs)
+txasplit_group_tab_bills: "Bills"
+txasplit_group_tab_members: "Members"
+txasplit_group_tab_stats: "Stats"
+
+## COMMON BUTTONS & ACTIONS
+txasplit_ok: "OK"
+txasplit_cancel: "Cancel"
+
+## LANGUAGE DISPLAY NAMES
+txasplit_lang_en: "English"
+txasplit_lang_vi: "Tiếng Việt"
+txasplit_lang_ja: "日本語"
+txasplit_lang_ko: "한국어"
+txasplit_lang_zh: "中文"
+
+## TIME FORMAT STRINGS
+txasplit_time_just_now: "Just now"
+txasplit_time_minutes_ago: "%s min ago"
+txasplit_time_hours_ago: "%s hours ago"
+txasplit_time_days_ago: "%s days ago"
+txasplit_last_backup: "Last: %s"
+txasplit_last_sync: "Last: %s"
+txasplit_version_display: "Version %s"
+
+## TXAFORMAT STRINGS (Download Progress)
+txasplit_format_calculating: "Calculating..."
+
+# Time Remaining Formats (2 digits each)
+txasplit_format_remaining_seconds: "%1$s s"
+txasplit_format_remaining_min_sec: "%1$s m %2$s s"
+txasplit_format_remaining_hour_min_sec: "%1$s h %2$s m %3$s s"
+txasplit_format_remaining_day_hour_min_sec: "%1$s d %2$s h %3$s m %4$s s"
+txasplit_format_remaining_month_day_hour: "%1$s mo %2$s d %3$s h"
+txasplit_format_remaining_year_month_day: "%1$s y %2$s mo %3$s d"
+
+# Size Formats (only one unit shown)
+txasplit_format_bytes: "%s B"
+txasplit_format_kilobytes: "%s KB"
+txasplit_format_megabytes: "%s MB"
+txasplit_format_gigabytes: "%s GB"
+
+# Speed Formats (only one unit shown: B/s, KB/s, MB/s, GB/s)
+txasplit_format_speed_bytes: "%s B/s"
+txasplit_format_speed_kilobytes: "%s KB/s"
+txasplit_format_speed_megabytes: "%s MB/s"
+txasplit_format_speed_gigabytes: "%s GB/s"
+
+# Percentage & Progress
+txasplit_format_percent: "%s%%"
+txasplit_format_download_progress: "%1$s / %2$s (%3$s)"
+txasplit_format_download_progress_speed: "%1$s / %2$s (%3$s) - %4$s"
+
+# Time Remaining Prefix
+txasplit_format_remaining_prefix: "Remaining"
+
+## LANGUAGE DOWNLOAD DIALOG
+txasplit_language_downloading: "Downloading language..."
+txasplit_language_checking: "Checking for updates..."
+txasplit_language_download_success: "Language downloaded successfully"
+txasplit_language_download_failed: "Failed to download language"
+txasplit_language_using_fallback: "Using fallback language"
+txasplit_language_apply_now: "Apply Now"
+txasplit_language_system_default: "System Default"
+
+## GENERIC MESSAGES
+txasplit_unknown_error: "Unknown error"
+txasplit_app_description: "Smart group expense management platform"
+
+## VIETQR INTEGRATION
+txa_vietqr_setup_required: "Vui lòng thiết lập thông tin ngân hàng trong cài đặt nhóm"
+txa_vietqr_loading: "Đang tải mã QR..."
+txa_vietqr_error: "Lỗi tải mã QR. Vui lòng thử lại."
+txa_vietqr_description: "Mã QR thanh toán VietQR"
+txa_vietqr_opening_banking_app: "Đang mở ứng dụng ngân hàng..."
+txa_vietqr_payment_details_copied: "Đã sao chép thông tin thanh toán"
+txa_vietqr_error_fallback_copy: "Lỗi mở ứng dụng ngân hàng. Đã sao chép thông tin thanh toán."
+
+## BANK INFO MANAGEMENT
+txa_bank_info_title: "Thông tin ngân hàng"
+txa_bank_info_bank: "Ngân hàng"
+txa_bank_info_account_number: "Số tài khoản"
+txa_bank_info_account_name: "Tên chủ tài khoản"
+txa_bank_info_save: "Lưu thông tin"
+txa_bank_info_remove: "Xóa thông tin"
+txa_bank_info_confirm_remove: "Bạn có chắc muốn xóa thông tin ngân hàng?"
+
+## PAYMENT ACTIONS
+txa_payment_pay_now: "Thanh toán ngay"
+txa_payment_copy_details: "Sao chép thông tin"
+txa_payment_amount_hint: "Số tiền"
+txa_payment_note_hint: "Ghi chú"
+
+## BILLING & NOTIFICATIONS
+txa_notification_bills_due: "Hóa đơn đến hạn"
+txa_notification_bills_due_description: "Thông báo khi hóa đơn sắp đến hạn"
+txa_notification_payment_reminders: "Nhắc nhắc thanh toán"
+txa_notification_payment_reminders_description: "Nhắc nhắc thanh toán định kỳ"
+txa_notification_overdue_bills: "Hóa đơn quá hạn"
+txa_notification_overdue_bills_description: "Thông báo hóa đơn quá hạn"
+txa_notification_payment_verification: "Xác nhận thanh toán"
+txa_notification_payment_verification_description: "Yêu cầu xác nhận thanh toán từ thành viên"
+txa_notification_group_updates: "Cập nhật nhóm"
+txa_notification_group_updates_description: "Thông báo cập nhật từ nhóm"
+
+txa_notification_bill_due_title: "Hóa đơn đến hạn"
+txa_notification_bill_due_content: "%1\$s trong nhóm %2\$s"
+txa_notification_bill_due_big_content: "Hóa đơn: %1\$s\nNhóm: %2\$s\nSố tiền: %3\$s\nNgày đến hạn: %4\$s"
+txa_notification_payment_reminder_title: "Nhắc nhắc thanh toán"
+txa_notification_payment_reminder_content: "%1\$s còn %2\$s ngày"
+txa_notification_payment_reminder_big_content: "Hóa đơn: %1\$s\nNhóm: %2\$s\nSố tiền: %3\$s\nCòn: %4\$s ngày"
+txa_notification_overdue_bill_title: "Hóa đơn quá hạn"
+txa_notification_overdue_bill_content: "%1\$s quá hạn %2\$s ngày"
+txa_notification_overdue_bill_big_content: "Hóa đơn: %1\$s\nNhóm: %2\$s\nSố tiền: %3\$s\nQuá hạn: %4\$s ngày"
+txa_notification_payment_verification_title: "Yêu cầu xác nhận thanh toán"
+txa_notification_payment_verification_content: "%1\$s thanh toán %2\$s"
+txa_notification_payment_verification_big_content: "Người thanh toán: %1\$s\nHóa đơn: %2\$s\nSố tiền: %3\$s"
+txa_notification_pay_now: "Thanh toán ngay"
+txa_notification_verify: "Xác nhận"
+
+## BILL MANAGEMENT
+txa_bill_create: "Tạo hóa đơn"
+txa_bill_title: "Tiêu đề hóa đơn"
+txa_bill_description: "Mô tả"
+txa_bill_amount: "Số tiền"
+txa_bill_due_date: "Ngày đến hạn"
+txa_bill_category: "Danh mục"
+txa_bill_recurring: "Lặp lại"
+txa_bill_save: "Lưu hóa đơn"
+txa_bill_status_pending: "Chờ thanh toán"
+txa_bill_status_partially_paid: "Thanh toán một phần"
+txa_bill_status_paid: "Đã thanh toán"
+txa_bill_status_overdue: "Quá hạn"
+txa_bill_status_cancelled: "Đã hủy"
+
+## PAYMENT MANAGEMENT
+txa_payment_add: "Thêm thanh toán"
+txa_payment_amount: "Số tiền thanh toán"
+txa_payment_method: "Phương thức thanh toán"
+txa_payment_notes: "Ghi chú"
+txa_payment_status_pending: "Chờ xử lý"
+txa_payment_status_completed: "Đã hoàn thành"
+txa_payment_status_cancelled: "Đã hủy"
+txa_payment_status_refunded: "Đã hoàn tiền"
+txa_payment_verification_pending: "Chờ xác nhận"
+txa_payment_verification_verified: "Đã xác nhận"
+txa_payment_verification_rejected: "Bị từ chối"
+
+## STATISTICS & EXPORT
+txa_statistics_title: "Thống kê"
+txa_statistics_spending_trend: "Xu hướng chi tiêu"
+txa_statistics_category_distribution: "Phân bổ theo danh mục"
+txa_statistics_payment_methods: "Phương thức thanh toán"
+txa_statistics_monthly_summary: "Tổng kết hàng tháng"
+txa_statistics_export_csv: "Xuất CSV"
+txa_statistics_export_excel: "Xuất Excel"
+txa_statistics_date_range: "Khoảng thời gian"
+txa_statistics_filter: "Lọc"
+txa_statistics_top_spenders: "Người chi tiêu nhiều nhất"
+
+## ERROR MESSAGES
+txa_error_invalid_bank_id: "Mã ngân hàng không hợp lệ"
+txa_error_invalid_account_number: "Số tài khoản không hợp lệ"
+txa_error_invalid_account_name: "Tên chủ tài khoản không hợp lệ"
+txa_error_invalid_amount: "Số tiền không hợp lệ"
+txa_error_permission_denied: "Bạn không có quyền thực hiện thao tác này"
+txa_error_group_not_found: "Không tìm thấy nhóm"
+txa_error_network: "Lỗi kết nối mạng"
+txa_error_unknown: "Đã xảy ra lỗi không xác định"
+
+## GROUP MANAGEMENT
+txa_group_create: "Tạo nhóm mới"
+txa_group_name: "Tên nhóm"
+txa_group_description: "Mô tả nhóm"
+txa_group_invite_code: "Mã mời"
+txa_group_join: "Tham gia nhóm"
+txa_group_members: "Thành viên"
+txa_group_settings: "Cài đặt nhóm"
+txa_group_leave: "Rời nhóm"
+txa_group_delete: "Xóa nhóm"
+
+## MEMBER ROLES
+txa_role_host: "Host"
+txa_role_co_host: "Co-host"
+txa_role_member: "Thành viên"
+txa_role_change: "Thay đổi vai trò"
+txa_role_transfer_leadership: "Chuyển quyền Host"
+txa_role_remove_member: "Xóa thành viên"
+
+## BILL CATEGORIES
+txa_category_food: "Ăn uống"
+txa_category_housing: "Nhà ở"
+txa_category_transportation: "Di chuyển"
+txa_category_utilities: "Dịch vụ"
+txa_category_entertainment: "Giải trí"
+txa_category_healthcare: "Y tế"
+txa_category_education: "Giáo dục"
+txa_category_shopping: "Mua sắm"
+txa_category_travel: "Du lịch"
+txa_category_business: "Công việc"
+txa_category_other: "Khác"
+
+## PAYMENT METHODS
+txa_payment_method_cash: "Tiền mặt"
+txa_payment_method_bank_transfer: "Chuyển khoản"
+txa_payment_method_vietqr: "VietQR"
+txa_payment_method_e_wallet: "Ví điện tử"
+txa_payment_method_credit_card: "Thẻ tín dụng"
+txa_payment_method_other: "Khác"
+
+## CHART PERIODS
+txa_chart_daily: "Hàng ngày"
+txa_chart_weekly: "Hàng tuần"
+txa_chart_monthly: "Hàng tháng"
+
+## EXPORT OPTIONS
+txa_export_bills: "Xuất hóa đơn"
+txa_export_payments: "Xuất thanh toán"
+txa_export_summary: "Xuất tổng kết"
+txa_export_success: "Xuất dữ liệu thành công"
+txa_export_failed: "Xuất dữ liệu thất bại"
+txa_export_file_saved: "File đã được lưu vào: %s"
+
+## DATE FORMATS
+txa_date_today: "Hôm nay"
+txa_date_yesterday: "Hôm qua"
+txa_date_this_week: "Tuần này"
+txa_date_this_month: "Tháng này"
+txa_date_this_year: "Năm nay"
+
+## UPDATE NOTIFICATIONS (Background Update)
+txa_notification_update_available: "Cập nhật có sẵn"
+txa_notification_update_available_description: "Thông báo khi có phiên bản mới"
+txa_notification_update_download: "Tải cập nhật"
+txa_notification_update_download_description: "Tiến trình tải cập nhật"
+txa_notification_update_complete: "Cập nhật hoàn tất"
+txa_notification_update_complete_description: "Thông báo khi tải xong hoặc thất bại"
+
+txa_notification_update_available_title: "Phiên bản %1\$s có sẵn"
+txa_notification_update_available_content: "Nhấn để tải xuống và cập nhật"
+txa_notification_update_available_big_content: "Phiên bản mới %1\$s đã sẵn sàng. Nhấn Tải xuống để cập nhật ngay."
+
+txa_notification_downloading_update: "Đang tải %1\$s..."
+txa_notification_download_progress: "%1\$s / %2\$s - %3\$s"
+
+txa_notification_download_success_title: "Tải xuống thành công"
+txa_notification_download_success_content: "Phiên bản %1\$s đã sẵn sàng cài đặt"
+txa_notification_download_success_big_content: "Đã tải xuống thành công phiên bản %1\$s. Nhấn Cài đặt để cập nhật ngay."
+
+txa_notification_download_failed_title: "Tải xuống thất bại"
+txa_notification_download_failed_content: "Không thể tải xuống cập nhật"
+txa_notification_download_failed_big_content: "Lỗi: %1\$s. Nhấn Thử lại để tải xuống lại."
+
+txa_notification_download: "Tải xuống"
+txa_notification_open_app: "Mở ứng dụng"
+txa_notification_install: "Cài đặt"
+txa_notification_retry: "Thử lại"
+txa_notification_dismiss: "Đóng"
+
+

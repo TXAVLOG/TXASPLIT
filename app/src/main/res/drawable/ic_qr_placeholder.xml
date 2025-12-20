@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - ic_qr_placeholder.xml
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- QR Code Placeholder Background -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M20,20h160v160H20z" />
+    
+    <!-- QR Code Border -->
+    <path
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M30,30h140v140H30z" />
+    
+    <!-- Corner Markers -->
+    <!-- Top Left -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M35,35h30v30H35z" />
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M45,45h10v10H45z" />
+    
+    <!-- Top Right -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M135,35h30v30H135z" />
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M145,45h10v10H145z" />
+    
+    <!-- Bottom Left -->
+    <path
+        android:fillColor="#424242"
+        android:pathData="M35,135h30v30H35z" />
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M45,145h10v10H45z" />
+    
+    <!-- Center Pattern -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M90,90h20v20H90z" />
+    
+    <!-- Random Pattern Dots -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M75,75h5v5H75z" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M120,75h5v5H120z" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M75,120h5v5H75z" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M120,120h5v5H120z" />
+    
+    <!-- TXA Logo Text -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M80,160h40v8H80z" />
+    <path
+        android:fillColor="#757575"
+        android:pathData="M85,168h30v2H85z" />
+</vector>

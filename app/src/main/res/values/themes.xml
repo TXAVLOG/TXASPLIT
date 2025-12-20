@@ -1,0 +1,23 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██      ██
+   ██    ██   ██ ██   ██ ██   ██ ██      ██
+
+TXASplit - Theme
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, Email: txavlog7@gmail.com!
+-->
+<resources>
+
+    <style name="Theme.TXASplit" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="colorPrimary">@color/txa_color_primary</item>
+        <item name="colorOnPrimary">@color/txa_color_on_primary</item>
+        <item name="android:colorBackground">@color/txa_color_background</item>
+        <item name="colorOnBackground">@color/txa_color_on_background</item>
+    </style>
+
+</resources>

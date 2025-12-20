@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - txa_strings.xml
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+
+<resources>
+    <!-- VietQR Related Strings -->
+    <string name="txa_vietqr_setup_required">Vui lòng thiết lập thông tin ngân hàng trong cài đặt nhóm</string>
+    <string name="txa_vietqr_loading">Đang tải mã QR...</string>
+    <string name="txa_vietqr_error">Lỗi tải mã QR. Vui lòng thử lại.</string>
+    <string name="txa_vietqr_description">Mã QR thanh toán VietQR</string>
+    <string name="txa_vietqr_opening_banking_app">Đang mở ứng dụng ngân hàng...</string>
+    <string name="txa_vietqr_payment_details_copied">Đã sao chép thông tin thanh toán</string>
+    <string name="txa_vietqr_error_fallback_copy">Lỗi mở ứng dụng ngân hàng. Đã sao chép thông tin thanh toán.</string>
+    
+    <!-- Bank Info Management -->
+    <string name="txa_bank_info_title">Thông tin ngân hàng</string>
+    <string name="txa_bank_info_bank">Ngân hàng</string>
+    <string name="txa_bank_info_account_number">Số tài khoản</string>
+    <string name="txa_bank_info_account_name">Tên chủ tài khoản</string>
+    <string name="txa_bank_info_save">Lưu thông tin</string>
+    <string name="txa_bank_info_remove">Xóa thông tin</string>
+    <string name="txa_bank_info_confirm_remove">Bạn có chắc muốn xóa thông tin ngân hàng?</string>
+    
+    <!-- Payment Actions -->
+    <string name="txa_payment_pay_now">Thanh toán ngay</string>
+    <string name="txa_payment_copy_details">Sao chép thông tin</string>
+    <string name="txa_payment_amount_hint">Số tiền</string>
+    <string name="txa_payment_note_hint">Ghi chú</string>
+    
+    <!-- Error Messages -->
+    <string name="txa_error_invalid_bank_id">Mã ngân hàng không hợp lệ</string>
+    <string name="txa_error_invalid_account_number">Số tài khoản không hợp lệ</string>
+    <string name="txa_error_invalid_account_name">Tên chủ tài khoản không hợp lệ</string>
+    <string name="txa_error_invalid_amount">Số tiền không hợp lệ</string>
+    <string name="txa_error_permission_denied">Bạn không có quyền thực hiện thao tác này</string>
+    <string name="txa_error_group_not_found">Không tìm thấy nhóm</string>
+    <string name="txa_error_network">Lỗi kết nối mạng</string>
+    <string name="txa_error_unknown">Đã xảy ra lỗi không xác định</string>
+</resources>

@@ -1,0 +1,89 @@
+<!--
+████████ ██   ██  █████   █████  ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████
+   ██     ██ ██  ██   ██ ██   ██ ██      ██
+   ██    ██   ██ ██   ██ ██   ██ ██      ██
+
+TXASplit - AndroidManifest
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, Email: txavlog7@gmail.com!
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- Dangerous permissions để hiển thị trên màn hình install của Android cũ (pre-6.0) -->
+    <!-- maxSdkVersion="22" = chỉ áp dụng cho Android 5.1 trở xuống -->
+    <!-- Trên Android 6.0+ sẽ không được grant tự động, cần request runtime nếu cần -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="22" />
+    
+    <!-- WRITE_EXTERNAL_STORAGE cho Android 5.1-9 (API 22-28) -->
+    <!-- - Android 5.1 trở xuống: Hiển thị trên màn hình install -->
+    <!-- - Android 6.0-9: Cần request runtime permission để ghi log API vào Downloads -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+    <application
+        android:name=".TXAApp"
+        android:allowBackup="true"
+        android:label="TXASplit"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TXASplit">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/txa_file_paths" />
+        </provider>
+
+        <activity
+            android:name=".TXASettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".TXAGroupDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".TXAMainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".TXASplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Broadcast Receivers -->
+        <receiver
+            android:name=".alarm.TXAAlarmScheduler$TXAAlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".notification.TXAUpdateNotificationManager$UpdateActionReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

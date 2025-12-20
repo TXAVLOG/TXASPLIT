@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+████████ ██   ██  █████   █████  ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██   ██ ██   ██
+   ██      ███   ███████ ███████ ██████  ██████ 
+   ██     ██ ██  ██   ██ ██   ██ ██      ██     
+   ██    ██   ██ ██   ██ ██   ██ ██      ██     
+
+TXASplit - view_vietqr.xml
+Build by TXA
+Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_vietqr_container"
+    android:elevation="4dp"
+    android:padding="16dp">
+
+    <!-- QR Code Image -->
+    <ImageView
+        android:id="@+id/qrImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/txa_vietqr_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_qr_placeholder" />
+
+    <!-- Security Overlay (shown when bank info not configured) -->
+    <TextView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/txa_overlay_background"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/txa_vietqr_setup_required"
+        android:textColor="@color/txa_overlay_text"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Loading Indicator -->
+    <TextView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/txa_vietqr_loading"
+        android:textColor="@color/txa_primary_text"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</FrameLayout>
