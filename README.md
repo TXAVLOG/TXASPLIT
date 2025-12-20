@@ -159,6 +159,34 @@ Cài đặt version cần thiết:
 sdkmanager "build-tools;35.0.0"
 ```
 
+### Lỗi "Failed to create Jar file" (Gradle cache corrupt)
+
+Nếu gặp lỗi:
+```
+java.util.concurrent.ExecutionException: org.gradle.api.GradleException: 
+Failed to create Jar file ~/.gradle/caches/jars-9/...bcprov-jdk18on-1.79.jar
+```
+
+**Giải pháp:**
+
+```bash
+# Dừng tất cả Gradle daemon
+./gradlew --stop
+
+# Xóa toàn bộ Gradle cache
+rm -rf ~/.gradle/caches/
+
+# Build lại
+./gradlew clean assembleDebug
+```
+
+**Hoặc chỉ xóa cache jars-9:**
+
+```bash
+rm -rf ~/.gradle/caches/jars-9/
+./gradlew clean assembleDebug
+```
+
 ---
 
 ## 📧 Liên hệ
