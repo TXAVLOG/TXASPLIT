@@ -9,7 +9,6 @@
 
 # --- Root level exclusions theo yêu cầu ---
 README_IMPLEMENTATION.md
-/tools/
 /.windsurf/
 /.cursor/
 /.gradle/
@@ -17,6 +16,10 @@ README_IMPLEMENTATION.md
 /gradle/
 /build/
 /TXABUILD/
+
+# --- Tools exceptions (allow specific build scripts) ---
+!tools/build_ubuntu.sh
+!tools/README_UBUNTU_BUILD.md
 
 # --- Android/IDE artifacts ---
 /local.properties
