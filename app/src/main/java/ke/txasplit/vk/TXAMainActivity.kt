@@ -46,6 +46,25 @@ class TXAMainActivity : AppCompatActivity() {
         vb = TxaActivityMainBinding.inflate(layoutInflater)
         setContentView(vb.root)
 
+        // Demo Complete Mode - Disable all main functionality
+        vb.toolbar.title = txa("txasplit_demo_complete_title")
+        
+        // Remove all menu items and tabs
+        vb.toolbar.menu.clear()
+        
+        // Show demo complete message instead of tabs
+        val demoCompleteFragment = TXASimpleTextFragment.newInstance(
+            txa("txasplit_demo_complete_message") + "\n\n" + 
+            txa("txasplit_demo_complete_sub_message")
+        )
+        
+        vb.pager.adapter = TXATabPagerAdapter(this, listOf(demoCompleteFragment))
+        
+        // Hide tabs since we only have one fragment now
+        vb.tabs.visibility = android.view.View.GONE
+        
+        /*
+        // ORIGINAL CODE - COMMENTED FOR DEMO MODE
         vb.toolbar.title = txa("txasplit_app_name")
         vb.toolbar.menu.add(txa("txasplit_settings")).setOnMenuItemClickListener {
             startActivity(Intent(this, TXASettingsActivity::class.java))
@@ -79,10 +98,16 @@ class TXAMainActivity : AppCompatActivity() {
                 tab.icon = ContextCompat.getDrawable(this@TXAMainActivity, iconRes)
             }
         }.attach()
+        */
     }
 
     override fun onResume() {
         super.onResume()
+        // Demo Complete Mode - Disable all background functionality
+        // No update checks, no permissions, no background tasks
+        
+        /*
+        // ORIGINAL CODE - COMMENTED FOR DEMO MODE
         // Phase 4: nếu vừa update xong, show dialog \"Update Successful\" và cleanup APK
         TXAUpdatePostInstall.maybeShowUpdateSuccessDialog(this)
 
@@ -95,6 +120,7 @@ class TXAMainActivity : AppCompatActivity() {
         // Request WRITE_EXTERNAL_STORAGE cho Android 9 trở xuống để ghi log API
         ensureStoragePermissionForLogging()
         ensureBackgroundUpdatePermissionsAndSchedule()
+        */
     }
     
     private fun ensureStoragePermissionForLogging() {

@@ -71,8 +71,15 @@ class TXASplashActivity : AppCompatActivity() {
             }
 
             delay(300)
+            // Demo Complete Mode - Redirect to demo complete activity
+            startActivity(Intent(this@TXASplashActivity, TXADemoCompleteActivity::class.java))
+            finish()
+            
+            /*
+            // ORIGINAL CODE - COMMENTED FOR DEMO MODE
             startActivity(Intent(this@TXASplashActivity, TXAMainActivity::class.java))
             finish()
+            */
         }
     }
 

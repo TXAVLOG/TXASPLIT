@@ -45,4 +45,12 @@ Contact: FB: https://fb.com/vlog.txa.2311, GMAIL: txavlog7@gmail.com!
     <string name="txa_error_group_not_found">Không tìm thấy nhóm</string>
     <string name="txa_error_network">Lỗi kết nối mạng</string>
     <string name="txa_error_unknown">Đã xảy ra lỗi không xác định</string>
+    
+    <!-- Demo Complete Messages -->
+    <string name="txasplit_demo_complete_title">Demo Phase Complete!</string>
+    <string name="txasplit_demo_complete_message">Thank you for testing TXASplit!</string>
+    <string name="txasplit_demo_complete_sub_message">The demo phase has been completed successfully. The app is now in announcement mode and will no longer provide main functionality.</string>
+    <string name="txasplit_demo_complete_thank_you">Thank You!</string>
+    <string name="txasplit_demo_complete_contact">Contact: FB: https://fb.com/vlog.txa.2311\nGMAIL: txavlog7@gmail.com</string>
+    <string name="txasplit_demo_complete_close">Close App</string>
 </resources>
